@@ -1,0 +1,67 @@
+body{
+    margin:0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contact{
+    padding:40px;
+    background:linear-gradient(to right , #2200cc,#110055) ;
+    color:#fefefe;
+    font-size: 24px;
+}
+
+.form{
+    padding:40px;
+    font-size: 24px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form label{
+    display: block;
+}
+
+.form input{
+    padding:7px ;
+    margin:15px 0;
+    border-radius: 7px;
+    font-size: 20px;
+    width:320px;
+}
+
+hr{
+    background-color: #110055;
+    border: none;
+    margin: 15px 0;
+    height: 2px;
+}
+
+.show-err{
+    display: none;
+}
+.border-err{
+    border: 2px solid red;
+}
+
+.submitBtn{
+    padding:10px 20px;
+    background:none;
+    border-color: #110055;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.err-msg{
+    color:red;
+    font-size: 16px;
+}
+.submitBtn:hover{
+    background-color: #110055;
+    color: #fff;
+}
+.thanks{
+    padding:40px;
+    font-size: 35px;
+    text-align: center;
+    display: none;
+}

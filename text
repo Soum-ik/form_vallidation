@@ -1,0 +1,41 @@
+
+const formEl = document.querySelector(".form");
+const nameInputEl = document.querySelector("input[name='name']");
+const emailInputEl = document.querySelector("input[name='email']");
+const passwordEl = document.querySelector("input[name='password']");
+const password2El = document.querySelector("input[name='password2']");
+const thanksEl = document.querySelector(".thanks");
+
+const inputs = [nameInputEl, emailInputEl, passwordEl, password2El];
+
+let checkValidation = false;
+let completeValidation = false;
+
+
+const resetInputEl = (elm) => {
+  elm.nextElementSibling.classList.add("show-err");
+  elm.classList.remove("border-err");
+};
+
+const invalidateEl = (elm) => {    invalidateEl(passwordEl);
+    checkValidation = false;
+  }
+  if (!password2El.value) {
+    invalidateEl(password2El);
+    
+    checkValidation = false;
+  }pleteValidation = true;
+  validateInputs();
+  if (checkValidation) {
+    formEl.remove();
+    thanksEl.style.display = "block";
+  }
+});
+
+
+// done
+inputs.forEach((input) => {
+  return input.addEventListener("input", () => {
+    validateInputs();
+  });
+});
